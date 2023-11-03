@@ -1,9 +1,9 @@
 {
     "resourceType": "ImplementationGuide",
-    "id": "hl7.fhir.nl.mdt-ig",
-    "url": "http://hl7.nl/fhir/mdt-viewer/ImplementationGuide/mdt-ig",
+    "id": "hl7.fhir.nl.mdt",
+    "url": "http://hl7.nl/fhir/mdt-viewer/ImplementationGuide/mdt",
     "version": "0.1",
-    "name": "mdt-ig",
+    "name": "mdt",
     "title": "MDT Implementation Guide",
     "status": "draft",
     "experimental": false,
@@ -22,13 +22,13 @@
         "code" : "NL"
       }]
     }],
-    "packageId": "hl7.fhir.nl.mdt-viewer",
+    "packageId": "hl7.fhir.nl.mdt",
     "fhirVersion": [ "3.0.2" ],
     "dependsOn": [
       {
-        "uri": "https://simplifier.net/packages/nictiz.fhir.nl.stu3.zib2017/2.2.8",
+        "uri": "https://simplifier.net/packages/nictiz.fhir.nl.stu3.zib2017/2.2.14",
         "packageId": "nictiz.fhir.nl.stu3.zib2017",
-        "version": "2.2.8"
+        "version": "2.2.14"
       }
     ],
     "definition": {
