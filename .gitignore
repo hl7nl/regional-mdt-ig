@@ -2,3 +2,5 @@ input-cache
 temp
 template
 output
+.index.db
+.index.json

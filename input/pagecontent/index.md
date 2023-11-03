@@ -6,4 +6,4 @@
 * Citrien Regionale Oncologie 2.0
 * DDMN
  
-
+{% include img.html img="fase1b.png" caption="Fase1b schets" width="70%" %}
