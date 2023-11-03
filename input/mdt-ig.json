@@ -1,0 +1,83 @@
+{
+    "resourceType": "ImplementationGuide",
+    "id": "hl7.fhir.nl.mdt-ig",
+    "url": "http://hl7.nl/fhir/mdt-viewer/ImplementationGuide/mdt-ig",
+    "version": "0.1",
+    "name": "mdt-ig",
+    "title": "MDT Implementation Guide",
+    "status": "draft",
+    "experimental": false,
+    "publisher": "HL7NL",
+    "contact" : [ {
+      "name" : "HL7NL",
+      "telecom" : [ {
+        "system" : "url",
+        "value" : "http://hl7.org/Special/committees/HL7NL/"
+      } ]      
+    } ],
+    "description": "MDO ondersteuning FHIR Implementation Guide",
+    "jurisdiction" : [{
+      "coding" : [{
+        "system" : "urn:iso:std:iso:3166",
+        "code" : "NL"
+      }]
+    }],
+    "packageId": "hl7.fhir.nl.mdt-viewer",
+    "fhirVersion": [ "3.0.2" ],
+    "dependsOn": [
+      {
+        "uri": "https://simplifier.net/packages/nictiz.fhir.nl.stu3.zib2017/2.2.8",
+        "packageId": "nictiz.fhir.nl.stu3.zib2017",
+        "version": "2.2.8"
+      }
+    ],
+    "definition": {
+      "page": {
+        "nameUrl": "toc.html",
+        "generation": "html",
+        "title": "Table of Contents",
+        "page": [
+          {
+            "nameUrl": "index.html",
+            "generation": "markdown",
+            "title": "Home Page"
+          },
+          {
+            "nameUrl": "conformance.html",
+            "generation": "markdown",
+            "title": "Conformance"
+          },
+          {
+            "nameUrl": "design.html",
+            "generation": "markdown",
+            "title": "Design"
+          },
+          {
+            "nameUrl": "downloads.html",
+            "generation": "markdown",
+            "title": "Useful Downloads"
+          },
+          {
+            "nameUrl": "changes.html",
+            "generation": "markdown",
+            "title": "IG Change History"
+          },
+          {
+            "nameUrl": "copyrights.html",
+            "generation": "markdown",
+            "title": "Copyrights"
+          }
+        ]
+      },
+      "parameter": [
+        {
+          "code" : "releaselabel",
+          "value": "CI Build"
+        },
+        {
+          "code" : "copyrightyear",
+          "value": "2023"
+        }
+      ]
+    }
+  }
