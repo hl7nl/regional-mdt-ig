@@ -2,7 +2,7 @@
 
 * Handreiking MDO doorontwikkeling (zie IHE).
 * Epic met Vitaly (vendor Open Line/Parsek) (hospital StAntonius)
-* Epic met Amaron (UMCG)
+* Epic met Amaron (UMCG) - test 
 * Citrien Regionale Oncologie 2.0
 * DDMN
  
