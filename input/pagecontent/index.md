@@ -10,6 +10,20 @@
  
 {% include img.html img="fase1b.png" caption="Fase1b schets" width="70%" %}
 
+### Chapters
+
+1. Goal and Starting point (scoping)
+    1. References
+1. High level view
+1. Process
+    1. Comparison
+1. Sequence diagram
+1. Content
+1. Other
+    1. Security/legal considerations
+    1. Financing, reembursing -> requirements for content 
+    1. Quality Registries considerations
+
 ### Sequence
 
 <div>
