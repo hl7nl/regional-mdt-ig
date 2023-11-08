@@ -1,4 +1,4 @@
-MDO ondersteuning FHIR Implementation Guide
+Regionaal MDO ondersteuning FHIR Implementation Guide
 
 https://confluence.hl7.org/display/HNETH/MDO+Implementatie+Gids
 

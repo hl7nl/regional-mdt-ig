@@ -9,3 +9,9 @@
 * DDMN
  
 {% include img.html img="fase1b.png" caption="Fase1b schets" width="70%" %}
+
+### Sequence
+
+<div>
+{% include sequence.svg width="100%" %}
+</div>

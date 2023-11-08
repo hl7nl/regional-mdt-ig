@@ -1,0 +1,47 @@
+@startuml
+
+actor Requestor
+box source-systems
+  participant EHR
+  participant DocRegistry
+end box
+participant MDTplatform
+actor Scheduler
+actor TeamMember
+
+Requestor->EHR: do request to schedule patient on the MDT Meeting
+EHR->EHR: show (preferrably filled in with known data) form
+note over EHR
+  specific content of form is e.g. in NABON or Informatiestandaard.
+  request form is just the "aanmelding", data will made available separate
+end note
+EHR->MDTplatform: request form
+
+Requestor->EHR: make sure needed content is available (preferrably in DocRegistry)
+note over EHR
+  make mandatory content available, even create orders for missing data like pathology/lab/imaging studies  
+  options to get the additional information
+  either through the 1. DocRegistry or 2. pull requests or share through 3. conference tool from the source-system
+end note
+alt option 1 (practical) (downside the region must have a regional registry)
+  EHR->DocRegistry: register documents (labs/doc/images)
+else option 2 (ideal)
+  EHR->EHR: enter information
+else option 3 (practical) (downside is you need access to the source-system)
+  EHR->EHR: using source-system
+end
+
+Scheduler->MDTplatform: [check content] schedule
+
+TeamMember->MDTplatform: prepare meeting
+alt option 1
+  MDTplatform->DocRegistry: query information (option 1) using links to DocRegistry
+else option 2
+  MDTplatform->EHR: query information (option 2) using FHIR
+else option 3
+  MDTplatform->EHR: query information (option 3) using source-system
+end
+
+MDTplatform->EHR: MDO report
+
+@enduml
