@@ -1,5 +1,4 @@
 @startuml
-
 actor Requestor
 box source-systems
   participant EHR
@@ -43,5 +42,4 @@ else option 3
 end
 
 MDTplatform->EHR: MDO report
-
 @enduml
