@@ -24,8 +24,14 @@
     1. Financing, reembursing -> requirements for content 
     1. Quality Registries considerations
 
-### Sequence
+### Functional Sequence
 
 <div>
 {% include sequence.svg width="100%" %}
+</div>
+
+### Technical Sequence
+
+<div>
+{% include tech-sequence.svg width="100%" %}
 </div>

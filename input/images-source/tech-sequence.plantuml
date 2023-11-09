@@ -1,0 +1,42 @@
+@startuml
+
+participant EHR
+participant MDT
+
+note across
+  Aanmelden (Request)
+end note
+
+alt Epic/Open Line
+  EHR->MDT: SMART-on-FHIR
+  MDT->EHRauth: post token return json with fhir_patient_id & encounter_id|order_id\n(step5 of https://vendorservices.epic.com/Article/Index?docid=oauth2&section=Embedded-Oauth2-Launch_Access-Token-Request)
+  MDT->EHR: Patient.read (IHE PDQm https://profiles.ihe.net/ITI/PDQm/index.html)
+  MDT->EHR: Observation.search(?encounter=encounter_id|order_id)\nBundle with Request form fields (discrete and text)\nmanually filter Relevant Patient History
+  MDT->MDT: Check BSN
+  MDT->MDT: Put patient on list for Planner (date is set in the Request data)
+  note over MDT
+    no updates possible
+  end note
+else Epic/Amaron
+  EHR->MDT: SMART-on-FHIR patient en encounter
+  MDT->EHR: Patient.read
+  note over MDT
+    no updates possible
+  end note
+else Chipsoft Zorgplatform
+  EHR->MDT: SMART-on-FHIR order_id ZP xaml transmulaar verwijzen
+end
+
+note across
+  Update (wens)
+end note
+
+note across
+  Prepare
+end note
+
+note across
+  Conduct
+end note
+
+@enduml
