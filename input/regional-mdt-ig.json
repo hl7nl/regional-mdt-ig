@@ -2,7 +2,7 @@
     "resourceType": "ImplementationGuide",
     "id": "hl7.fhir.nl.mdt",
     "url": "http://hl7.nl/fhir/mdt-viewer/ImplementationGuide/mdt",
-    "version": "0.1",
+    "version": "0.1.0",
     "name": "mdt",
     "title": "MDT Implementation Guide",
     "status": "draft",
